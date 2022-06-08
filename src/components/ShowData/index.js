@@ -1,9 +1,4 @@
-import React from 'react'
+import ShowData from './ShowData'
 
-function index(){
-  return (
-    <div>index</div>
-  )
-}
-
-export default index
+export default ShowData
+export * from './ShowData'

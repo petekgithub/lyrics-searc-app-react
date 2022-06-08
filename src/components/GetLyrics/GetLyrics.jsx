@@ -3,7 +3,7 @@ import React from 'react'
 const GetLyrics = () => {
   return (
     <>
-    
+{/*     
     //  That part exactly the same with js code
     async function getLyrics(artist, songTitle) {
       const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
@@ -30,7 +30,7 @@ const GetLyrics = () => {
       }
 
     });
-    
+     */}
 
     </>
   )

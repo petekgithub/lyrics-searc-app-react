@@ -1,15 +1,15 @@
 import React, {useState,useEffect} from 'react'
 import styled from "styled-components";
 import {FaSearch} from 'react-icons/fa'
-import {ShowData} from '../ShowData'
+import ShowData from '../ShowData'
 
 
 // Search by song or artist
 function SearchSongsArtist() {
 
-    const [search, setSearch] = useState([])
+    const [search, setSearch] = useState('')
 
-    const searchSongsAndArtist = async () => {
+    const searchSongsAndArtist = async (term) => {
         const response = await fetch(`${'https://api.lyrics.ovh'}/suggest/${term}`);
 
         // handle response
@@ -36,9 +36,9 @@ function SearchSongsArtist() {
             <div>
                 <FaSearch></FaSearch>
                 <input 
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e) => setSearch(e.target.value)}
                 type="text"
-                value={input}
+                value={search}
                 />
             </div>
         </FormStyle>

@@ -3,7 +3,7 @@ import React from 'react'
 function ShowData({data}){
   return (
     <>
-    //  That part exactly the same with js code
+    {/* //  That part exactly the same with js code
             result.innerHTML = `
               <ul class="songs">
                   ${data.data.map(song => `<li>
@@ -32,7 +32,7 @@ function ShowData({data}){
           more.innerHTML = '';
           }
           }
-              
+               */}
     </>
   )
 }
